@@ -67,6 +67,40 @@ Students will:
 
 ------------------------------------------------------------------------
 
+## 📁 Dataset Description
+
+This project uses the **20 Newsgroups** corpus (via `scikit-learn`) for
+large-scale text retrieval experiments. The dataset contains thousands of
+documents across multiple categories, making it suitable for building and
+evaluating TF-IDF + cosine similarity retrieval pipelines.
+
+## 👥 Team Members
+
+-   Preeja Anilal
+-   Anthony Izevbokun
+-   Minh Thuan
+
+## 🔗 Dataset Link and License
+
+-   Dataset source: [20 Newsgroups
+    Dataset](https://scikit-learn.org/stable/datasets/real_world.html#newsgroups-dataset)
+-   Access method: `sklearn.datasets.fetch_20newsgroups`
+-   License/terms: Refer to the dataset notes in scikit-learn documentation and
+    original source notices linked there.
+
+## 🧭 Retrieval Approach Summary
+
+The retrieval system follows a classical vector-space workflow:
+
+1.  Preprocess text (tokenization, normalization, stop-word removal, optional
+    stemming/lemmatization).
+2.  Build representations (binary incidence, TF, DF, IDF, TF-IDF).
+3.  Convert queries to vectors and rank documents using **cosine similarity**.
+4.  Evaluate relevance using **Precision, Recall, F1, Precision@K, AP, and
+    MRR**, with emphasis on information need rather than simple keyword overlap.
+
+------------------------------------------------------------------------
+
 ## 🔍 Relevance to RAG (Retrieval-Augmented Generation)
 
 This workshop focuses on the **retrieval layer** of modern AI systems.
